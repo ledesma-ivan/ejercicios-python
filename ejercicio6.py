@@ -1,4 +1,4 @@
-'''
+
 numero = int(input("Ingrese un numero: "))
 numero1 = int(input("Ingrese otro numero: "))
 numero2 = int(input("Ingrese otro numero: "))
@@ -83,7 +83,7 @@ else:
         print('No tiene aumento de sueldo')
 
 
-'''
+
 
 numero = int(input("Ingrese un numero: "))
 numero_1 = int(input("Ingrese segundo numero: "))

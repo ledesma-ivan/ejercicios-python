@@ -1,4 +1,4 @@
-'''
+
 nota_1 = int(input("Ingrese la primera nota: "))
 nota_2 = int(input("Ingrese la segunda nota: "))
 nota_3 = int(input("Ingrese la tercera nota: "))
@@ -40,7 +40,7 @@ else:
     else:
         print('El numero tiene mas de tres cifras')
 
-'''
+
 
 cantidad_preguntas = int(input("Ingrese la cantidad de preguntas: "))
 cantidad_correctas = int(input("Ingrese la cantidad de preguntas correctas: "))

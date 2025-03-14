@@ -1,4 +1,4 @@
-'''
+
 num = int(input("Enter a number: "))
 
 num_2 = int(input("Enter another number: "))
@@ -8,7 +8,7 @@ suma = num + num_2
 producto = num * num_2
 
 print("La suma es: ", suma, " y el producto es: ", producto)
-'''
+
 
 
 precio = int(input("Ingrese el precio del producto: "))
@@ -19,7 +19,7 @@ importe =  precio * cantidad
 
 print("El importe a pagar es: ", importe)
 
-a. lado = int(input('Ingrese un lado:'))
+lado = int(input('Ingrese un lado:'))
 
 superficie = lado * lado
 
@@ -27,7 +27,7 @@ print('La superficie del cuadrado es:', superficie)
 
 
 
-b. 
+
 
 num = int(input("Enter a number: "))
 

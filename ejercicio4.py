@@ -1,4 +1,3 @@
-'''
 sueldo = int(input("Cuanto es tu sueldo: ? "))
 
 if sueldo > 3000:
@@ -34,7 +33,6 @@ if promedio >= 7:
     print('Promocionado')
 else:
     print('No promocionado')
-'''
 
 
 num_1 = int(input("Ingrese un numero: "))
