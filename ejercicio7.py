@@ -153,3 +153,28 @@ elif suma_de_lista_1 > suma_de_lista:
     print("Lista 2 mayor", sum(lista_1))
 else:
     print("La listas son iguales")
+
+
+
+"""
+Desarrollar un programa que permita cargar n números enteros y luego nos informe cuántos valores fueron pares y cuántos impares.
+Emplear el operador “%” en la condición de la estructura condicional (este operador retorna el resto de la división de dos valores, por ejemplo 11%2 retorna un 1):
+"""
+
+# El == se usa como condicional para ver si es da un numero par sera verdadero
+n = int(input('Ingrese la cantidad de numeros que desea carga: '))
+
+x = 0
+
+par = 0
+
+impar = 0
+
+while x < n:
+    numero = int(input("Ingrese un numero entero: "))
+    if numero % 2 == 0:
+        par += 1
+    else:
+        impar+= 1
+    print(f"La cantidad de numeros pares son {par} y la cantidad de numeros impar son {impar}")
+    x+=1
