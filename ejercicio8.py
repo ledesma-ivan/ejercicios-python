@@ -12,9 +12,31 @@ for x in range(1,100,2):
     print(x)
 
 # Desarrollar un programa que permita la carga de 10 valores por teclado y nos muestre posteriormente la suma de los valores ingresados y su promedio.
+valores = []
+for x in range(0, 10):
+    n = int(input("Ingrese un valor: "))
+    valores.append(n)
 
+suma = sum(valores)
+promedio = suma / 10
+print(f"La suma de los valores ingresados es: {suma}, y su promedio es {promedio}")
 
 # Escribir un programa que solicite por teclado 10 notas de alumnos y nos informe cuántos tienen notas mayores o iguales a 7 y cuántos menores.
+notas = []
+
+mayores_o_igual_7 = []
+menores_7 = []
+
+for x in range(0, 10):
+    n = int(input("Ingrese la nota del alumno: "))
+    if n >= 7:
+        mayores_o_igual_7.append(n)
+    else:
+        menores_7.append(n)
+
+cantidad_pro = len(mayores_o_igual_7)
+cantidad_no_pro = len(menores_7)
+print(f"La cantidad de alumnos con notas mayores o iguales a 7 es: {cantidad_pro} y la cantidad de alumnos con notas menores a 7 es: {cantidad_no_pro}")
 
 
 # Escribir un programa que lea 10 números enteros y luego muestre cuántos valores ingresados fueron múltiplos de 3 y cuántos de 5. Debemos tener en cuenta que hay números que son múltiplos de 3 y de 5 a la vez.
