@@ -69,16 +69,51 @@ Este tipo de problemas también se puede resolver empleando la estructura repeti
 Dicha variable se carga antes de entrar a la estructura repetitiva for.
 """
 
+# En este caso no pide usar listas, si bien es una opcion viable habra que analizar el costo computacional.
+
+
+cantidad = int(input("Ingrese la cantidad de valores a ingresar: "))
+
+valores_igual_mayor_mil = 0
+
+for cantidad in range(0, cantidad):
+    n = int(input("Ingrese un valor: "))
+    if n >= 1000:
+        cantidad+=1
+
+print('La cantidad total de numeros ingresados que son mayor o igual a mil es', cantidad)
+
 
 """
 Confeccionar un programa que lea n pares de datos, cada par de datos corresponde a la medida de la base y la altura de un triángulo. El programa deberá informar:
 a) De cada triángulo la medida de su base, su altura y su superficie.
 b) La cantidad de triángulos cuya superficie es mayor a 12.
 """
+cantidad = int(input("Ingrese la cantidad de triangulos que tenes"))
+superfie_mayor_12 = 0
 
+for x in range(0, cantidad):
+    base = int(input("Ingrese la base del triangulo: " ))
+    altura = int(input("Ingrese la altura"))
+    superficie = base * altura / 2
+    print('La base es', base)
+    print('La altura es', altura)
+    print('La superfie es', superficie)
+
+    if superficie > 12:
+        superfie_mayor_12 +=1
+print('La la cantidad de triangules cuya superficies es mayor a 12: ', superficie)
 
 # Desarrollar un programa que solicite la carga de 10 números e imprima la suma de los últimos 5 valores ingresados.
+ultimos_5 = []
 
+for n in range(0, 10):
+    if n > 5:
+        numero = int(input("Ingrese un numero: "))
+        ultimos_5.append(numero)
+
+suma_ultimos_5 = sum(ultimos_5)
+print("La suma de los ultimos 5 valores ingresados es: ", suma_ultimos_5)
 
 # Desarrollar un programa que muestre la tabla de multiplicar del 5 (del 5 al 50)
 
