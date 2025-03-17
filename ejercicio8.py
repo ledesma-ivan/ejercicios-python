@@ -128,6 +128,13 @@ print(resultado)
 # Confeccionar un programa que permita ingresar un valor del 1 al 10 y nos muestre la tabla de multiplicar del mismo (los primeros 12 términos)
 # Ejemplo: Si ingreso 3 deberá aparecer en pantalla los valores 3, 6, 9, hasta el 36.
 
+n = int(input("Ingrese el valor de la tabla a multiplicar"))
+
+for x in range(13):
+    resultado = n * x
+    print(resultado)
+
+print(resultado)
 
 """
 Realizar un programa que lea los lados de n triángulos, e informar:
