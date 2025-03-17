@@ -41,6 +41,26 @@ print(f"La cantidad de alumnos con notas mayores o iguales a 7 es: {cantidad_pro
 
 # Escribir un programa que lea 10 números enteros y luego muestre cuántos valores ingresados fueron múltiplos de 3 y cuántos de 5. Debemos tener en cuenta que hay números que son múltiplos de 3 y de 5 a la vez.
 
+multiplo_3 = []
+multiplo_de_5 = []
+multiplo_3_5 = []
+
+for x in range(0, 10):
+    n = int(input("Ingrese un numero: "))
+    if n % 3 == 0 and n % 5 == 0:
+        multiplo_3_5.append(n)
+    elif n % 3 == 0:
+        multiplo_3.append(n)
+    elif n % 5 == 0:
+        multiplo_de_5.append(n)
+    else:
+        print('El numero no es multiplo ni de 3 ni de 5.')
+
+cantidad_multiplo_3 = len(multiplo_3)
+cantidad_multiplo_5 = len(multiplo_de_5)
+cantidad_multiplo_3_5 = len(multiplo_3_5)
+
+print(f"Cantidad de multiplo de 3 es: {cantidad_multiplo_3} y la cantidad de multiplo de 5 es: {cantidad_multiplo_5} y la cantidad de valores es multiplos de los dos es {cantidad_multiplo_3_5}")
 
 
 """
