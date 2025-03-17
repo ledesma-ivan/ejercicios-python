@@ -117,15 +117,25 @@ print("La suma de los ultimos 5 valores ingresados es: ", suma_ultimos_5)
 
 # Desarrollar un programa que muestre la tabla de multiplicar del 5 (del 5 al 50)
 
+print("Bienvenido a la tabla de multiplicar")
+for x in range(11):
+    tabla = 5
+    resultado = 5 * x
+    print(resultado)
+
+print(resultado)
 
 # Confeccionar un programa que permita ingresar un valor del 1 al 10 y nos muestre la tabla de multiplicar del mismo (los primeros 12 términos)
 # Ejemplo: Si ingreso 3 deberá aparecer en pantalla los valores 3, 6, 9, hasta el 36.
+
 
 """
 Realizar un programa que lea los lados de n triángulos, e informar:
 a) De cada uno de ellos, qué tipo de triángulo es: equilátero (tres lados iguales), isósceles (dos lados iguales), o escaleno (ningún lado igual)
 b) Cantidad de triángulos de cada tipo.
 """
+
+ 
 
 """
 Escribir un programa que pida ingresar coordenadas (x,y) que representan puntos en el plano.
@@ -151,3 +161,4 @@ a) Obtener el promedio de las edades de cada turno (tres promedios)
 b) Imprimir dichos promedios (promedio de cada turno)
 c) Mostrar por pantalla un mensaje que indique cual de los tres turnos tiene un promedio de edades mayor.
 """
+
