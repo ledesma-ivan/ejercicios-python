@@ -139,7 +139,27 @@ a) De cada uno de ellos, qué tipo de triángulo es: equilátero (tres lados igu
 b) Cantidad de triángulos de cada tipo.
 """
 
+n = int(input("Ingrese cuantos triangulos tenes: "))
+equilátero = 0
+isosceles = 0 
+escaleno = 0
+
+for n in range(0, n+1):
+    lado_1 = int(input("Ingrese el lado 1: "))
+    lado_2 = int(input("Ingrese el lado 2: "))
+    lado_3 = int(input("Ingrese el lado 3: "))
+
+    if lado_1 == lado_2 and lado_1 == lado_3:
+        print("Los tres lados son iguales")
+        equilátero+=1
+    elif lado_1 == lado_2 or lado_1 == lado_3:
+        print("El triangulo es isosceles")
+        isosceles+=1
+    else:
+        print("Ningun lado es igual")
+        escaleno+=1
  
+print(f"La cantidad de triagulos que son equilateros, {equilátero}, y isosceles {isosceles}, y lo que son escaleno {escaleno}")
 
 """
 Escribir un programa que pida ingresar coordenadas (x,y) que representan puntos en el plano.
@@ -154,6 +174,16 @@ b) La cantidad de valores ingresados positivos.
 c) La cantidad de múltiplos de 15.
 d) El valor acumulado de los números ingresados que son pares.
 """
+valores_positivos = 0
+valores_negativos = 0
+multiplos_15 = 0
+numeros_pares = []
+
+for x in range(10):
+    n = input("Ingrese un valor: ")
+    
+
+
 
 """
 Se cuenta con la siguiente información:
