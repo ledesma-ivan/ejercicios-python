@@ -222,3 +222,29 @@ a) Obtener el promedio de las edades de cada turno (tres promedios)
 b) Imprimir dichos promedios (promedio de cada turno)
 c) Mostrar por pantalla un mensaje que indique cual de los tres turnos tiene un promedio de edades mayor.
 """
+turno_early = []
+turno_mid = []
+turno_late = []
+
+for x in range(5):
+    n = int(input("Ingrese las edad de 5 estudiantes de turno early: "))
+    turno_early.append(n)
+
+for x in range(6):
+    n = int(input("Ingrese las edad de 6 estudiantes de turno mid": ))
+    turno_mid.append(n)
+
+for x in range(11):
+    n = int(input("Ingrese las edad de 11 estudiantes de turno late: "))
+    turno_late.append(n)
+
+promedio_early = (sum(turno_early)) / 5
+promedio_mid = (sum(turno_mid)) / 6
+promedio_late = (sum(turno_late)) / 11
+
+if promedio_early > promedio_mid and promedio_early > promedio_late:
+    print("El promedio early tiene mayor promedio de edad de alumnos")
+elif promedio_mid > promedio_early and promedio_mid > promedio_late:
+    print("El promedio mid tiene mayor promedio de edad de alumnos")
+else:
+    print("El promedio late tiene mayor promedio de edad de alumnos")
