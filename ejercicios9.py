@@ -22,7 +22,7 @@ Utilizar el caracter # para los comentarios.
 # Ultima fecha de modificacion: 20/3/25
 suma = 0
 for x in range(10):
-    n = float(input(f"Ingrese carga de valores reales"))
+    n = float(input(f"Ingrese carga de valores reales: "))
     suma += n
     
 print("La suma de valores reales ingresados es: ", suma)
